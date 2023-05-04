@@ -21,21 +21,28 @@ html {
 }
 
 header {
-    display: flex;
-    flex-direction: column;
     background-color: var(--blue);
     color: var(--off-white);
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.section-1 {
+    padding: 24px;
+    display: flex;
     gap: 24px;
-    padding: 12px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 nav {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    gap: 28px;
+    gap: 64px;
 }
 
 #logo-text {
@@ -50,13 +57,14 @@ li {
 .nav-links {
     display: flex;
     gap: 16px;
-    
+    color: var(--yellow);
 }
 
 section.hero {
     display: flex;
     justify-content: space-between;
     margin: 24px 0;
+    gap: 64px;
 }
 
 .hero-left {
@@ -81,7 +89,7 @@ section.hero {
 .hero-button {
     color: var(--white);
     text-shadow: 12px;
-    background-color: var(--light-blue);
+    background-color: var(--red);
     border: none;
     border-radius: 8px;
     width: 170px;
@@ -94,11 +102,59 @@ section.hero {
     width: auto;
 }
 
-.staff {
-    padding: 32px 64px;
+/* staff section */
+section.staff {
+    padding: 45px 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.staff h2 {
+
+.section-2-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin: 0 50px;
+}
+.section-2 h2 {
     text-align: center;
-    font-size: 36px;
-    font-weight: bolder;
 }
+
+.staff-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+}
+
+.staff-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.staff-card img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 5px solid var(--red);
+}
+
+.staff-card :nth-child(2) {
+    font-weight: 600;
+    font-size: 18px;
+}
+.staff-card :nth-child(3) {
+    font-weight: bold;
+    color: var(--blue);
+}
+
+ /* quote section */
+
+ 
