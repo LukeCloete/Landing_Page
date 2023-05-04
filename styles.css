@@ -67,7 +67,7 @@ section.hero {
     display: flex;
     justify-content: space-between;
     margin: 24px 0;
-    gap: 180px;
+    gap: 240px;
 }
 
 .hero-left {
@@ -202,7 +202,7 @@ section.call-to-action {
 
 section div.container {
     border-radius: 8px;
-    background-color: var(--light-blue);
+    background-color: var(--red);
     padding: 24px 48px;
     margin: 40px 0;
     display: flex;
@@ -221,10 +221,19 @@ section div.container {
 
 .CTA-button {
     color: var(--white);
-    background-color: var(--light-blue);
+    background-color: var(--red);
     border: 1px solid var(--white);
     border-radius: 8px;
     width: 170px;
     height: 40px;
     font-weight: bold;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    background-color: var(--blue);
+    height: 64px;
 }
