@@ -20,6 +20,11 @@ html {
     font-size: 16px;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 header {
     background-color: var(--blue);
     color: var(--off-white);
@@ -142,6 +147,13 @@ section.staff {
     gap: 8px;
 }
 
+.staff-img {
+    width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  border: 5px solid var(--red);
+}
+
 .staff-card img {
     width: 140px;
     height: 140px;
@@ -163,10 +175,10 @@ section.staff {
 
 section.quote {
     background-color: var(--off-white);
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .section-3-wrapper {
@@ -174,22 +186,24 @@ section.quote {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5% 25%;
-    gap: 12px;
+    margin: 0 30%;
+    padding: 48px
 }
 
-.section-3-wrapper p {
+.author {
     font-size: 26px;
     font-weight: bold;
     color: var(--blue);
     align-self: flex-end;
+    padding-right: 52px;
 }
 
 blockquote {
     font-size: 32px;
     font-weight: 100;
     font-style: italic;
-    color: black);
+    color: black;
+    padding: 24px;
 }
 
 /* Call to Action section */
@@ -202,9 +216,9 @@ section.call-to-action {
 
 section div.container {
     border-radius: 8px;
-    background-color: var(--red);
-    padding: 24px 48px;
-    margin: 40px 0;
+    background-color: var(--light-blue);
+    padding: 32px 48px;
+    margin: 48px 0;
     display: flex;
     align-items: center;
     gap: 36px;
@@ -221,7 +235,7 @@ section div.container {
 
 .CTA-button {
     color: var(--white);
-    background-color: var(--red);
+    background-color: var(--light-blue);
     border: 1px solid var(--white);
     border-radius: 8px;
     width: 170px;
